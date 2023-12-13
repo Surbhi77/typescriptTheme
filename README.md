@@ -5,34 +5,43 @@
 
 Install my-project with npm
 
-```bash
-git clone https://github.com/codingforpleasure/_frontend.git
-cd _frontend
-npm install _frontend
-```
+This repo is now deprecated. In the time since it created TypeScript support is now a default feature of Create React App.
 
-    
-## Routes
-All paths appear under: `src/app/routing/PrivateRoutes.tsx`
+# Creates an app called my-app
+npx create-react-app my-app --typescript
 
-Option | filesystem path| route
------- | ---------------------------|------
-Sign Up | ./components/signup/SignUp| /auth/sign-up
-Login | ./components/Login          | http://localhost:3011/auth/login
-Camera Test |            | http://localhost:3011/cameratest
-Print pages |            | http://localhost:3011/print-pages
-Speaker Test|            | http://localhost:3011/speakertest
-Assessment stage|        | http://localhost:3011/assessmentstage
-Lets connect|            | http://localhost:3011/letsconnect
-Test Screen|             | http://localhost:3011/testscreen
-Resume test|             | http://localhost:3011/resume-test
+cd my-app
 
-```
-Test Takers > ADAM  '../pages/tackers/UserTackers' - /takers
+# Adds the type definitions
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
-ADAM > How often - '../pages/tackers/HowOften' - /howoften
+This means you can get started with:
 
-ADAM > Lets Connect- '../pages/tackers/LetsConnect' - /letsconnect
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-ADAM > Assessment Stage - '../pages/tackers/AssessmentStage' - /assessmentstage
-```
+The page will reload when you make changes.
+You may also see any lint errors in the console.
+
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+See the section about deployment for more information.
+
+npm run eject
+Note: this is a one-way operation. Once you eject, you can't go back!
+
+If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
