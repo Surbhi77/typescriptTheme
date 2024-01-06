@@ -8,6 +8,7 @@ import { ICreateAccount } from '../CreateAccountWizardHelper';
 
 const Step1: FC = () => {
   const { values } = useFormikContext<ICreateAccount>();
+  console.log("hello")
 
   return (
     <div className='w-100 px-0 px-xl-20 px-xxl-0'>
@@ -17,7 +18,7 @@ const Step1: FC = () => {
         <div className='text-gray-500 fw-semibold fs-6'>To begin the assessment</div>
       </div>
       {/* begin::Heading */}
-
+        
       {/* begin::Login options */}
       <div className='row g-3 mb-9'>
         {/* begin::Col */}

@@ -12,6 +12,7 @@ const Step3: FC = () => {
 
   const pickDate = () => {
     const defaultDob = new Date();
+    
     defaultDob.setFullYear(defaultDob.getFullYear() - 18);
     const formattedDate = defaultDob.toISOString().split('T')[0];
     formik.setFieldValue('dateOfBirth', formattedDate);
