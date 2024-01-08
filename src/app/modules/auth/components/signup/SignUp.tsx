@@ -16,8 +16,8 @@ const SignUp = () => {
   const [currentSchema, setCurrentSchema] = useState(createAccountSchemas[0])
   const [initValues] = useState<ICreateAccount>(inits)
   const navigate = useNavigate()
- console.log(currentSchema)
-   console.log('initValues',initValues)
+//  console.log(currentSchema)
+  //  console.log('initValues',initValues)
 
   const loadStepper = () => {
     stepper.current = StepperComponent.createInsance(stepperRef.current as HTMLDivElement)
