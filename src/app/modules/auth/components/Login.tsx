@@ -34,7 +34,7 @@ const initialValues = {
 export function Login() {
   const [loading, setLoading] = useState(false)
   const {saveAuth, setCurrentUser} = useAuth()
-
+console.log('saveAuth',saveAuth)
   const formik = useFormik({
     initialValues,
     validationSchema: loginSchema,
