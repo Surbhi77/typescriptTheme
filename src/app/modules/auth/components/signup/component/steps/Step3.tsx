@@ -9,7 +9,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 const Step3: FC = () => {
   const {values, errors} = useFormikContext<ICreateAccount>()
   const formik = useFormikContext();
-
+  console.log("hello")
   const pickDate = () => {
     const defaultDob = new Date();
     

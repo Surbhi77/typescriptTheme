@@ -9,7 +9,7 @@ import { ICreateAccount } from '../CreateAccountWizardHelper';
 const Step1: FC = () => {
   const { values } = useFormikContext<ICreateAccount>();
   console.log("hello")
-  console.log('saveAuth')
+  // console.log('saveAuth')
   return (
     <div className='w-100 px-0 px-xl-20 px-xxl-0'>
       {/* begin::Heading */}
